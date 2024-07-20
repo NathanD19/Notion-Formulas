@@ -1,0 +1,4 @@
+Formula for expenses
+
+prop("Bill Due") == "Weekly" ? prop("Bill Total") * 4.33 :
+prop("Bill Total") / (prop("Bill Due") == "Monthly" ? 1: (prop("Bill Due") == "Tri-Monthly" ? 3 : (prop("Bill Due") == "Bi-Monthly" ? 2 : (prop("Bill Due") == "Weekly" ? - 4.3 : 1))))
